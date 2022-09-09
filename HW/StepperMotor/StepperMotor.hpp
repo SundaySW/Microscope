@@ -130,6 +130,7 @@ private:
     LOGIC_LEVEL* endPoint;
     TIM_HandleTypeDef *htim;
     uint32_t timChannel;
+    uint32_t timerDividend;
 
     int criticalNofSteps;
     int currentStep = 0;
@@ -141,7 +142,7 @@ private:
     float Vmax;
 
     float V = 0.0f;
-    uint32_t timerDividend;
+
     MOTOR_DIRECTION currentDirection = FORWARD;
     MODE mode = IDLE;
     MOTOR_EVENT event = EVENT_STOP;
